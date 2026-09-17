@@ -1,6 +1,6 @@
 import type { Job, CreateJobPayload, JobStatus } from '../types/job';
 
-const API_BASE = 'http://localhost:3000';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 /**
  * Parses the response and throws a descriptive error for non-2xx responses.
